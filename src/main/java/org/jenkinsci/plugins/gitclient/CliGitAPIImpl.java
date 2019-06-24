@@ -2295,7 +2295,7 @@ public class CliGitAPIImpl extends LegacyCompatibleGitAPIImpl {
             }
 
             if (status != 0) {
-                throw new GitException("Command \"" + command + "\" returned status code " + status + ":\nstdout: " + stdout + "\nstderr: "+ stderr);
+                throw new GitException("Command \"" + environment + command + "\" returned status code " + status + ":\nstdout: " + stdout + "\nstderr: "+ stderr);
             }
 
             return stdout;
